@@ -1,0 +1,9 @@
+<Config>
+  <TextName>
+  </TextName>
+  <InitialDirectory>
+  </InitialDirectory>
+  <TextSelectionStart>0</TextSelectionStart>
+  <FormPositionX>661</FormPositionX>
+  <FormPositionY>471</FormPositionY>
+</Config>

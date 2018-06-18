@@ -1,0 +1,8 @@
+d:\MyData\我的文档\Visual Studio 2005\Projects\Text\Text\bin\Debug\Text.exe
+d:\MyData\我的文档\Visual Studio 2005\Projects\Text\Text\bin\Debug\Text.pdb
+d:\MyData\我的文档\Visual Studio 2005\Projects\Text\Text\obj\Debug\ResolveAssemblyReference.cache
+d:\MyData\我的文档\Visual Studio 2005\Projects\Text\Text\obj\Debug\Text.Form1.resources
+d:\MyData\我的文档\Visual Studio 2005\Projects\Text\Text\obj\Debug\Text.Properties.Resources.resources
+d:\MyData\我的文档\Visual Studio 2005\Projects\Text\Text\obj\Debug\Text.csproj.GenerateResource.Cache
+d:\MyData\我的文档\Visual Studio 2005\Projects\Text\Text\obj\Debug\Text.exe
+d:\MyData\我的文档\Visual Studio 2005\Projects\Text\Text\obj\Debug\Text.pdb
