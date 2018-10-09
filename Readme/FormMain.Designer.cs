@@ -50,7 +50,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("Arial monospaced for SAP", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(214, 179);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(30, 23);
@@ -62,7 +62,7 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Font = new System.Drawing.Font("Arial monospaced for SAP", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(244, 179);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(30, 23);
@@ -78,14 +78,15 @@
             // 
             // checkBox1
             // 
-            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(115, 184);
+            this.checkBox1.Font = new System.Drawing.Font("宋体", 6.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.checkBox1.Location = new System.Drawing.Point(94, 185);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(30, 16);
+            this.checkBox1.Size = new System.Drawing.Size(39, 14);
             this.checkBox1.TabIndex = 0;
             this.checkBox1.TabStop = false;
-            this.checkBox1.Text = "T";
+            this.checkBox1.Text = "Top";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -115,9 +116,9 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
             this.richTextBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
@@ -127,15 +128,15 @@
             this.richTextBox1.Size = new System.Drawing.Size(275, 181);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "alt + o : open folder\nalt + r : reload last file\n\nctl + mouse wheel : to change f" +
-                "ont size\nz : page up\nx : page down\n\nalt + c : boss key\n\nAuthor: Anthony\nEmail: c" +
-                "vcds@sina.com";
+    "ont size\nz : page up\nx : page down\n\nalt + c : boss key\n\nAuthor: Anthony\nEmail: c" +
+    "vcds@sina.com";
             this.richTextBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox1_MouseClick);
             this.richTextBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.richTextBox1_KeyUp);
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(-1, 156);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(275, 21);
@@ -148,11 +149,11 @@
             this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.trackBar1.AutoSize = false;
             this.trackBar1.LargeChange = 1;
-            this.trackBar1.Location = new System.Drawing.Point(31, 183);
+            this.trackBar1.Location = new System.Drawing.Point(33, 185);
             this.trackBar1.Minimum = 1;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.trackBar1.Size = new System.Drawing.Size(83, 18);
+            this.trackBar1.Size = new System.Drawing.Size(62, 14);
             this.trackBar1.TabIndex = 0;
             this.trackBar1.TabStop = false;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
@@ -173,9 +174,10 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox1.Font = new System.Drawing.Font("宋体", 7.5F);
             this.comboBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -193,17 +195,17 @@
             "MidnightBlue",
             "Teal",
             "DarkSlateGray"});
-            this.comboBox1.Location = new System.Drawing.Point(143, 180);
+            this.comboBox1.Location = new System.Drawing.Point(129, 182);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(60, 20);
+            this.comboBox1.Size = new System.Drawing.Size(82, 18);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.TabStop = false;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // textBoxFind
             // 
-            this.textBoxFind.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxFind.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxFind.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxFind.Location = new System.Drawing.Point(1, 0);
             this.textBoxFind.Name = "textBoxFind";
@@ -216,7 +218,8 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(209, -1);
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.Location = new System.Drawing.Point(208, -1);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(65, 22);
             this.button6.TabIndex = 4;
@@ -227,13 +230,12 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // textBoxName
             // 
-            this.textBoxName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBoxName.Location = new System.Drawing.Point(-1, 179);
             this.textBoxName.Multiline = true;
@@ -249,28 +251,28 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(274, 202);
-            this.Controls.Add(this.textBoxFind);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button6);
+            this.Controls.Add(this.textBoxFind);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBoxName);
             this.MinimumSize = new System.Drawing.Size(290, 240);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Readme";
-            this.Deactivate += new System.EventHandler(this.FormMain_Deactivate);
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.Activated += new System.EventHandler(this.Form1_Activated);
-            this.Leave += new System.EventHandler(this.Form1_Leave);
+            this.Deactivate += new System.EventHandler(this.FormMain_Deactivate);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Leave += new System.EventHandler(this.Form1_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

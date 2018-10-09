@@ -15,9 +15,6 @@ namespace Readme
 {
     public partial class FormMain : Form
     {
-        // Add text
-        //ArrayList newlist = new ArrayList();
-        //int iTextArrayIndex = 0; 
         // Text Name
         string sTextName = "";
         // Text had been uploaded flag
@@ -36,7 +33,7 @@ namespace Readme
 
         // Timer counter for show the file name of txt
         int iTimerShowCounter = 0;
-        int iTimerMaxCounter = 10;
+        int iTimerMaxCounter = 16;
 
         public FormMain()
         {
@@ -50,8 +47,17 @@ namespace Readme
 
             this.textBoxName.BringToFront();
 
-
             AdjustComboBoxDropDownListWidth(comboBox1);
+
+            richTextBox1.Text = "Version " + Application.ProductVersion + "\n\n" +
+                                "alt + o : open folder \n" +
+                                "alt + r : reload last file\n" +
+                                "ctl + mouse wheel: to change font size\n" +
+                                "z: page up\n" +
+                                "x: page down\n" +
+                                "alt + c : boss key\n\n" +
+                                "Author: Anthony\n" +
+                                "Email: cvcds @sina.com";
         }
 
         // Load
@@ -253,14 +259,16 @@ namespace Readme
                 // Name
                 sTextName = openFileDialog1.FileName.Substring(openFileDialog1.FileName.LastIndexOf("\\") + 1);
 
+                // Clear the last read position
                 iTextSelectionStart = 0;
 
                 fWriteConfig();
 
-                // Clear iTextArrayIndex And TextBox
-                //iTextArrayIndex = 0;
-                // Read Whole File
-                fReadWholeFile(openFileDialog1.FileName);
+                // Read whole file
+                fReadWholeFile(openFileDialog1.FileName, iTextSelectionStart, iTextZoomFactor);
+
+                // Then show the current reading percent
+                this.Text = "FormMain" + " - " + (Convert.ToSingle(iTextSelectionStart * 10000 / richTextBox1.TextLength) / 100).ToString("f2") + "%";
 
                 timer1.Enabled = true;
             }
@@ -271,7 +279,7 @@ namespace Readme
         }
 
         //  Get and show txt File
-        private void fReadWholeFile(string sFN)
+        private void fReadWholeFile(string sFN, int index, float zoom)
         {
             try
             {
@@ -281,8 +289,14 @@ namespace Readme
                 richTextBox1.Clear();
                 // Add All Text
                 richTextBox1.AppendText(File.ReadAllText(sFN, UnicodeEncoding.GetEncoding("GB2312")));
-                // Scroll To Top
-                richTextBox1.SelectionStart = 0;
+
+                // Get the zoom value
+                richTextBox1.ZoomFactor = zoom;
+
+                // Get the position
+                richTextBox1.SelectionStart = index;
+
+                // Scroll to selected position
                 richTextBox1.ScrollToCaret();
 
                 // Set text had been uploaded flag to true
@@ -335,16 +349,11 @@ namespace Readme
             {
                 if (sInitialDirectory != "" && sTextName != "")
                 {
-                    // Read file
-                    fReadWholeFile(sInitialDirectory + sTextName);
+                    // Read whole file
+                    fReadWholeFile(sInitialDirectory + sTextName, iTextSelectionStart, iTextZoomFactor);
 
-                    richTextBox1.ZoomFactor = iTextZoomFactor;
-
-                    // Get the last position
-                    richTextBox1.SelectionStart = iTextSelectionStart;
-
-                    // Scroll to selected position
-                    richTextBox1.ScrollToCaret();
+                    // Then show the current reading percent
+                    this.Text = "FormMain" + " - " + (Convert.ToSingle(iTextSelectionStart * 10000 / richTextBox1.TextLength) / 100).ToString("f2") + "%";
 
                     timer1.Enabled = true;
                 }
@@ -363,6 +372,9 @@ namespace Readme
             {
                 // Get Position
                 iTextSelectionStart = richTextBox1.SelectionStart;
+
+                // Then show the current reading percent
+                this.Text = "FormMain" + " - " + (Convert.ToSingle(iTextSelectionStart * 10000 / richTextBox1.TextLength) / 100).ToString("f2") + "%";
             }
         }
 
@@ -645,7 +657,7 @@ namespace Readme
             }
             else
             {
-                textBoxName.Text = sTextName;
+                textBoxName.Text = "Loaded " + sTextName;
                 textBoxName.Visible = true;
             }
             iTimerShowCounter++;

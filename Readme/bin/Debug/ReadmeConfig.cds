@@ -1,12 +1,12 @@
 <Config>
-  <TextName>st2.txt</TextName>
-  <InitialDirectory>C:\Users\dongchen\Documents\VCS Projects\Readme\Readme\bin\Debug\text\</InitialDirectory>
-  <TextSelectionStart>99</TextSelectionStart>
-  <TextZoomFactor>1</TextZoomFactor>
+  <TextName>JK.txt</TextName>
+  <InitialDirectory>C:\Users\jchena5\Documents\Visual Studio 2005\Projects\Readme\Readme\bin\Debug\text\</InitialDirectory>
+  <TextSelectionStart>375</TextSelectionStart>
+  <TextZoomFactor>1.4</TextZoomFactor>
   <FormWidth>290</FormWidth>
   <FormHeight>240</FormHeight>
-  <FormPositionX>269</FormPositionX>
-  <FormPositionY>771</FormPositionY>
+  <FormPositionX>1034</FormPositionX>
+  <FormPositionY>434</FormPositionY>
   <OpacityValue>10</OpacityValue>
-  <ColorIndex>13</ColorIndex>
+  <ColorIndex>11</ColorIndex>
 </Config>

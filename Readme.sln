@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Readme", "Readme\Readme.csproj", "{95B33414-7A01-4920-A4C3-6DD7ECC3FC0A}"
 EndProject
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {57872776-337B-4798-A5F7-18D3516E5D71}
+		SolutionGuid = {571C085F-45E0-41CA-AA93-FD288BBA6A83}
 	EndGlobalSection
 EndGlobal
