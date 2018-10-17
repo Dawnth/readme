@@ -57,7 +57,7 @@ namespace Readme
                                 "x: page down\n" +
                                 "alt + c : boss key\n\n" +
                                 "Author: Anthony\n" +
-                                "Email: cvcds @sina.com";
+                                "Email: cvcds@sina.com";
         }
 
         // Load
@@ -268,7 +268,7 @@ namespace Readme
                 fReadWholeFile(openFileDialog1.FileName, iTextSelectionStart, iTextZoomFactor);
 
                 // Then show the current reading percent
-                this.Text = "FormMain" + " - " + (Convert.ToSingle(iTextSelectionStart * 10000 / richTextBox1.TextLength) / 100).ToString("f2") + "%";
+                calculatePrecent();
 
                 timer1.Enabled = true;
             }
@@ -353,7 +353,7 @@ namespace Readme
                     fReadWholeFile(sInitialDirectory + sTextName, iTextSelectionStart, iTextZoomFactor);
 
                     // Then show the current reading percent
-                    this.Text = "FormMain" + " - " + (Convert.ToSingle(iTextSelectionStart * 10000 / richTextBox1.TextLength) / 100).ToString("f2") + "%";
+                    calculatePrecent();
 
                     timer1.Enabled = true;
                 }
@@ -374,8 +374,14 @@ namespace Readme
                 iTextSelectionStart = richTextBox1.SelectionStart;
 
                 // Then show the current reading percent
-                this.Text = "FormMain" + " - " + (Convert.ToSingle(iTextSelectionStart * 10000 / richTextBox1.TextLength) / 100).ToString("f2") + "%";
+                calculatePrecent();
             }
+        }
+
+        public void calculatePrecent()
+        {
+            // Then show the current reading percent
+            this.Text = "FormMain" + " - " + (Convert.ToSingle(Convert.ToUInt64(iTextSelectionStart) * 10000 / Convert.ToUInt64(richTextBox1.TextLength)) / 100).ToString("f2") + "%";
         }
 
         // Page Up

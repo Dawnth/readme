@@ -127,9 +127,9 @@
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(275, 181);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "alt + o : open folder\nalt + r : reload last file\n\nctl + mouse wheel : to change f" +
-    "ont size\nz : page up\nx : page down\n\nalt + c : boss key\n\nAuthor: Anthony\nEmail: c" +
-    "vcds@sina.com";
+            this.richTextBox1.Text = "Version 1.0.0.0\n\nalt + o : open folder\nalt + r : reload last file\nctl + mouse whe" +
+    "el : to change font size\nz : page up\nx : page down\nalt + c : boss key\n\nAuthor: A" +
+    "nthony\nEmail: cvcds@sina.com";
             this.richTextBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.richTextBox1_MouseClick);
             this.richTextBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.richTextBox1_KeyUp);
             // 
